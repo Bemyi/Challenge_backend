@@ -4,19 +4,12 @@ from django.db import models
 
 class User(models.Model):
     name = models.CharField(max_length=100)
-    friends = models.ManyToManyField('self', symmetrical=False)
-
-class Lesson(models.Model):
-    topic = models.CharField(max_length=100)
+    friends = models.ManyToManyField('self')
     
 class Course(models.Model):
     name = models.CharField(max_length=100)
-    lessons = models.ManyToManyRel(Lesson, though='CourseLesson')
 
-class CourseLesson(models.Model):
-    course = models.ForeignKey(Course, on_delete=models.CASCADE)
-    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
-
-class UserLesson(models.Model):
+class UserCourse(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    lessons_taken = models.IntegerField(default=0)
