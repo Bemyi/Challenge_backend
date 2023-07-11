@@ -21,7 +21,7 @@ class UserCourseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserCourse
-        fields = ['course']
+        fields = ['course', 'lessons_taken']
 
 class UserCoursesSerializer(UserSerializer):
     """gets all courses for an specific user"""
