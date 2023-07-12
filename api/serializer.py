@@ -7,9 +7,10 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['name']
 
 class FriendshipsSerializer(serializers.ModelSerializer):
+    friends = UserSerializer(many=True, read_only=True)
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['name', 'friends']
 
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
