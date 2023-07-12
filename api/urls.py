@@ -1,7 +1,5 @@
-from django.urls import path, include
-from rest_framework import routers
+from django.urls import path
 from api import views
-
 
 urlpatterns=[
     path('users/', views.UserListAPIView.as_view(), name='users-list'),

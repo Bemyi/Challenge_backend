@@ -6,22 +6,27 @@ from django.http import JsonResponse
 import json
 
 class UserListAPIView(generics.ListAPIView):
+    """view to get the list of users"""
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
 class FriendshipsListAPIView(generics.ListAPIView):
+    """View to get the list of friendships"""
     queryset = User.objects.all()
     serializer_class = FriendshipsSerializer
 
 class UserFriendsDetailAPIView(generics.RetrieveAPIView):
+    """View to get the friends of an user"""
     queryset = User.objects.all()
     serializer_class = FriendshipsSerializer
 
 class UserLessonsListAPIView(generics.RetrieveAPIView):
+    """View to get the lessons of an user"""
     queryset = User.objects.all()
     serializer_class = UserCoursesSerializer
 
 class WeatherAPIView(generics.ListAPIView):
+    """View to get the weather"""
     serializer_class = WeatherSerializer
 
     def get_queryset(self):
