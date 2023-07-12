@@ -25,7 +25,6 @@ class UserCourseSerializer(serializers.ModelSerializer):
         fields = ['course', 'lessons_taken']
 
 class UserCoursesSerializer(UserSerializer):
-    """gets all courses for an specific user"""
     
     courses = serializers.SerializerMethodField('get_courses')
     
@@ -37,3 +36,7 @@ class UserCoursesSerializer(UserSerializer):
     class Meta:
         model = User
         fields = ['name', 'courses']
+
+class WeatherSerializer(serializers.Serializer):
+    def to_representation(self, weather):
+        return weather
