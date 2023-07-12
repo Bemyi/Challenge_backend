@@ -1,0 +1,30 @@
+[
+  {
+    "model": "api.Course",
+    "pk": 1,
+    "fields": {
+      "name": "Matemática"
+    }
+  },
+  {
+    "model": "api.Course",
+    "pk": 2,
+    "fields": {
+      "name": "Español"
+    }
+  },
+  {
+    "model": "api.Course",
+    "pk": 3,
+    "fields": {
+      "name": "Inglés"
+    }
+  },
+  {
+    "model": "api.Course",
+    "pk": 4,
+    "fields": {
+      "name": "Geografía"
+    }
+  }
+]

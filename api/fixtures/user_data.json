@@ -1,0 +1,42 @@
+[
+  {
+    "model": "api.User",
+    "pk": 1,
+    "fields": {
+      "name": "Pepe",
+      "friends": [2, 3, 4, 5]
+    }
+  },
+  {
+    "model": "api.User",
+    "pk": 2,
+    "fields": {
+      "name": "Juan",
+      "friends": [1, 3]
+    }
+  },
+  {
+    "model": "api.User",
+    "pk": 3,
+    "fields": {
+      "name": "Ramon",
+      "friends": [1, 2]
+    }
+  },
+  {
+    "model": "api.User",
+    "pk": 4,
+    "fields": {
+      "name": "Josefina",
+      "friends": [1, 5]
+    }
+  },
+  {
+    "model": "api.User",
+    "pk": 5,
+    "fields": {
+      "name": "Maria",
+      "friends": [1, 4]
+    }
+  }
+]

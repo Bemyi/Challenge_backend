@@ -1,0 +1,74 @@
+[
+  {
+    "model": "api.UserCourse",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "course": 1,
+      "lessons_taken": 3
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "course": 3,
+      "lessons_taken": 5
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "course": 4,
+      "lessons_taken": 2
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 4,
+    "fields": {
+      "user": 3,
+      "course": 1,
+      "lessons_taken": 6
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 5,
+    "fields": {
+      "user": 3,
+      "course": 2,
+      "lessons_taken": 7
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 6,
+    "fields": {
+      "user": 2,
+      "course": 2,
+      "lessons_taken": 2
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "course": 3,
+      "lessons_taken": 2
+    }
+  },
+  {
+    "model": "api.UserCourse",
+    "pk": 8,
+    "fields": {
+      "user": 5,
+      "course": 4,
+      "lessons_taken": 1
+    }
+  }
+]
