@@ -22,8 +22,8 @@ Se puede probar directamente colocando la URL en el navegador o utilizando un AP
 
 - Listar todos los usuarios del sistema: `http://localhost:8000/api/users/`
 - Listar todas las amitades registradas en el sistema: `http://localhost:8000/api/friendships/`
-  **Nota:** Reemplazar <user_id> por el número de un usuario del 1 al 5.
-- Listar todos los amigos de un usuario en específico: `http://localhost:8000/api/user/<user_id>/lessons/`
+- **Nota:** Reemplazar <user_id> por el número de un usuario del 1 al 5.
+- Listar todos los amigos de un usuario en específico: `http://localhost:8000/api/user/<user_id>/friends/`
 - Listar todas las lecciones que tomó un usuario en específico: `http://localhost:8000/api/user/<user_id>/lessons/`
 - Ver API integrada del tiempo (muestra temperatura mínima y máxima del día en Buenos Aires): `http://localhost:8000/api/weather/`
 
