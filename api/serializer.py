@@ -4,13 +4,13 @@ from .models import User, Course, UserCourse
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['name']
+        fields = ['id', 'name']
 
 class FriendshipsSerializer(serializers.ModelSerializer):
     friends = UserSerializer(many=True, read_only=True)
     class Meta:
         model = User
-        fields = ['name', 'friends']
+        fields = ['id', 'name', 'friends']
 
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
@@ -35,7 +35,7 @@ class UserCoursesSerializer(UserSerializer):
     
     class Meta:
         model = User
-        fields = ['name', 'courses']
+        fields = ['id', 'name', 'courses']
 
 class WeatherSerializer(serializers.Serializer):
     def to_representation(self, weather):
