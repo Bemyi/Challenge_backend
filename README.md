@@ -31,3 +31,7 @@ Se puede probar directamente colocando la URL en el navegador o utilizando un AP
 
 Los unit test se encuentran en el archivo `api\tests.py`, se pueden correr los tests con
 el comando: `python manage.py test`
+
+# UML
+
+En el directorio raíz del proyecto se encuentra el archivo `UML.png` con el diagrama UML de la solución.
